@@ -25,7 +25,7 @@
                                             <rect key="frame" x="15" y="12" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NWp-FG-yws">
@@ -121,19 +121,19 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EcH-Id-Rqe">
                                 <rect key="frame" x="189" y="397" width="186" height="29"/>
                             </pickerView>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="uh7-EV-dIo">
-                                <rect key="frame" x="46" y="551" width="94" height="29"/>
-                            </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="SfE-LQ-4iB">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" restorationIdentifier="Stepper2" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="SfE-LQ-4iB">
                                 <rect key="frame" x="235" y="551" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepper2ValueChanged:" destination="3cq-pb-d5Y" eventType="valueChanged" id="txH-Wa-0Rt"/>
+                                </connections>
                             </stepper>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Team 1" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kyT-We-0Tw">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="ScoreTeam1" text="Team 1" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kyT-We-0Tw" userLabel="ValueLabel1">
                                 <rect key="frame" x="46" y="483" width="99" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Team 2" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fhi-AI-XIq">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="ScoreTeam2" text="Team 2" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fhi-AI-XIq" userLabel="ValueLabel2">
                                 <rect key="frame" x="235" y="483" width="99" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -142,6 +142,12 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJ0-2f-3fA">
                                 <rect key="frame" x="0.0" y="308" width="186" height="29"/>
                             </pickerView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" restorationIdentifier="Stepper1" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="uh7-EV-dIo">
+                                <rect key="frame" x="46" y="551" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepper1ValueChanged:" destination="3cq-pb-d5Y" eventType="valueChanged" id="Q7P-Hg-Z78"/>
+                                </connections>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -151,6 +157,13 @@
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="stepper1" destination="uh7-EV-dIo" id="DQ7-Fr-kY6"/>
+                        <outlet property="stepper1ValueChanged" destination="uh7-EV-dIo" id="pTF-z9-PZC"/>
+                        <outlet property="stepper2" destination="SfE-LQ-4iB" id="Ygp-0d-gWt"/>
+                        <outlet property="valueLabel1" destination="kyT-We-0Tw" id="dfn-yU-v8i"/>
+                        <outlet property="valueLabel2" destination="fhi-AI-XIq" id="oZn-Hn-6Cm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D5u-9C-oee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,6 +13,12 @@ class AddGameViewController: UIViewController {
     var players = [Player]()
 
     override func viewDidLoad() {
+        
+        stepper1.wraps = true
+        stepper1.autorepeat = true
+        stepper2.wraps = true
+        stepper2.autorepeat = true
+        
     }
     
     func saveGame(scoreTeam1: NSNumber, scoreTeam2: NSNumber, playersTeam1: [Player], playersTeam2: [Player]) {
@@ -23,4 +29,15 @@ class AddGameViewController: UIViewController {
         players = ((UIApplication.sharedApplication().delegate as! AppDelegate).dataManager?.getPlayers())!
     }
     
+    @IBOutlet weak var valueLabel1: UITextView!
+    @IBOutlet weak var stepper1: UIStepper!
+    @IBAction func stepper1ValueChanged(sender: AnyObject) {
+        valueLabel1.text = sender.value.description
+    }
+    @IBOutlet weak var valueLabel2: UITextView!
+
+    @IBOutlet weak var stepper2: UIStepper!
+    @IBAction func stepper2ValueChanged(sender: UIStepper) {
+        valueLabel2.text = sender.value.description
+    }
 }
