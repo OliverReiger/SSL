@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56A31D8A1CD4E2B50002B7E7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A31D891CD4E2B50002B7E7 /* DataManager.swift */; };
+		56A31D8C1CD4E3E40002B7E7 /* DummyDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A31D8B1CD4E3E40002B7E7 /* DummyDataGenerator.swift */; };
 		93FF93611CD4D77100EC25EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FF93601CD4D77100EC25EE /* AppDelegate.swift */; };
 		93FF93661CD4D77100EC25EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FF93641CD4D77100EC25EE /* Main.storyboard */; };
 		93FF93691CD4D77100EC25EE /* SSL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93FF93671CD4D77100EC25EE /* SSL.xcdatamodeld */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56A31D891CD4E2B50002B7E7 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		56A31D8B1CD4E3E40002B7E7 /* DummyDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyDataGenerator.swift; sourceTree = "<group>"; };
 		93FF935D1CD4D77100EC25EE /* SSL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FF93601CD4D77100EC25EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93FF93651CD4D77100EC25EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,12 +34,12 @@
 		93FF936A1CD4D77100EC25EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93FF936D1CD4D77100EC25EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93FF936F1CD4D77100EC25EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93FF93751CD4DE0900EC25EE /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataProperties.swift"; path = "models/Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		93FF93761CD4DE0900EC25EE /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Game.swift; path = models/Game.swift; sourceTree = "<group>"; };
-		93FF93771CD4DE0900EC25EE /* Player+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Player+CoreDataProperties.swift"; path = "models/Player+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		93FF93781CD4DE0900EC25EE /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = models/Player.swift; sourceTree = "<group>"; };
-		93FF93791CD4DE0900EC25EE /* Season+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Season+CoreDataProperties.swift"; path = "models/Season+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		93FF937A1CD4DE0900EC25EE /* Season.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Season.swift; path = models/Season.swift; sourceTree = "<group>"; };
+		93FF93751CD4DE0900EC25EE /* Game+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Game+CoreDataProperties.swift"; path = "../models/Game+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		93FF93761CD4DE0900EC25EE /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Game.swift; path = ../models/Game.swift; sourceTree = "<group>"; };
+		93FF93771CD4DE0900EC25EE /* Player+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Player+CoreDataProperties.swift"; path = "../models/Player+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		93FF93781CD4DE0900EC25EE /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = ../models/Player.swift; sourceTree = "<group>"; };
+		93FF93791CD4DE0900EC25EE /* Season+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Season+CoreDataProperties.swift"; path = "../models/Season+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		93FF937A1CD4DE0900EC25EE /* Season.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Season.swift; path = ../models/Season.swift; sourceTree = "<group>"; };
 		93FF93821CD4DE9F00EC25EE /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		93FF93841CD4E0F200EC25EE /* AddGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,10 +55,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56A31D8D1CD4E5AA0002B7E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93FF93751CD4DE0900EC25EE /* Game+CoreDataProperties.swift */,
+				93FF93761CD4DE0900EC25EE /* Game.swift */,
+				93FF93771CD4DE0900EC25EE /* Player+CoreDataProperties.swift */,
+				93FF93781CD4DE0900EC25EE /* Player.swift */,
+				93FF93791CD4DE0900EC25EE /* Season+CoreDataProperties.swift */,
+				93FF937A1CD4DE0900EC25EE /* Season.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		56A31D8E1CD4E5B10002B7E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				93FF93841CD4E0F200EC25EE /* AddGameViewController.swift */,
+				93FF93821CD4DE9F00EC25EE /* TableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		56A31D8F1CD4E5B70002B7E7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				56A31D891CD4E2B50002B7E7 /* DataManager.swift */,
+				56A31D8B1CD4E3E40002B7E7 /* DummyDataGenerator.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		93FF93541CD4D77100EC25EE = {
 			isa = PBXGroup;
 			children = (
-				93FF93811CD4DE1800EC25EE /* models */,
 				93FF935F1CD4D77100EC25EE /* SSL */,
 				93FF935E1CD4D77100EC25EE /* Products */,
 			);
@@ -71,29 +105,17 @@
 		93FF935F1CD4D77100EC25EE /* SSL */ = {
 			isa = PBXGroup;
 			children = (
+				56A31D8F1CD4E5B70002B7E7 /* Service */,
+				56A31D8E1CD4E5B10002B7E7 /* Controller */,
+				56A31D8D1CD4E5AA0002B7E7 /* Models */,
 				93FF93601CD4D77100EC25EE /* AppDelegate.swift */,
 				93FF93641CD4D77100EC25EE /* Main.storyboard */,
-				93FF93841CD4E0F200EC25EE /* AddGameViewController.swift */,
 				93FF936A1CD4D77100EC25EE /* Assets.xcassets */,
-				93FF93821CD4DE9F00EC25EE /* TableViewController.swift */,
 				93FF936C1CD4D77100EC25EE /* LaunchScreen.storyboard */,
 				93FF936F1CD4D77100EC25EE /* Info.plist */,
 				93FF93671CD4D77100EC25EE /* SSL.xcdatamodeld */,
 			);
 			path = SSL;
-			sourceTree = "<group>";
-		};
-		93FF93811CD4DE1800EC25EE /* models */ = {
-			isa = PBXGroup;
-			children = (
-				93FF93751CD4DE0900EC25EE /* Game+CoreDataProperties.swift */,
-				93FF93761CD4DE0900EC25EE /* Game.swift */,
-				93FF93771CD4DE0900EC25EE /* Player+CoreDataProperties.swift */,
-				93FF93781CD4DE0900EC25EE /* Player.swift */,
-				93FF93791CD4DE0900EC25EE /* Season+CoreDataProperties.swift */,
-				93FF937A1CD4DE0900EC25EE /* Season.swift */,
-			);
-			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +198,8 @@
 				93FF93691CD4D77100EC25EE /* SSL.xcdatamodeld in Sources */,
 				93FF937F1CD4DE0900EC25EE /* Season+CoreDataProperties.swift in Sources */,
 				93FF93851CD4E0F200EC25EE /* AddGameViewController.swift in Sources */,
+				56A31D8C1CD4E3E40002B7E7 /* DummyDataGenerator.swift in Sources */,
+				56A31D8A1CD4E2B50002B7E7 /* DataManager.swift in Sources */,
 				93FF93831CD4DE9F00EC25EE /* TableViewController.swift in Sources */,
 				93FF93611CD4D77100EC25EE /* AppDelegate.swift in Sources */,
 			);

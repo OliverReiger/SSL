@@ -10,6 +10,8 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    var gamesArray = [Game]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,33 +21,34 @@ class TableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        updateGames()
+    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func updateGames() {
+        self.gamesArray = ((UIApplication.sharedApplication().delegate as! AppDelegate).dataManager?.getGames())!
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return gamesArray.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("gameCell", forIndexPath: indexPath)
+        cell.textLabel?.text = "Game \(indexPath.row)"
+        cell.detailTextLabel?.text = "\(gamesArray[indexPath.row].scoreTeam1!) : \(gamesArray[indexPath.row].scoreTeam2!)"
         // Configure the cell...
 
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.

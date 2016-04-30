@@ -12,6 +12,22 @@ import CoreData
 
 class Game: NSManagedObject {
 
-// Insert code here to add functionality to your managed object subclass
+    var playersTeam1Array : [Player] {
+        get {
+            return playersTeam1?.allObjects as! [Player]
+        }
+        set(allPlayersTeam1) {
+            playersTeam1 = NSSet(array: allPlayersTeam1)
+        }
+    }
+    
+    var playersTeam2Array : [Player] {
+        get {
+            return playersTeam2?.allObjects as! [Player]
+        }
+        set(allPlayersTeam2) {
+            playersTeam2 = NSSet(array: allPlayersTeam2)
+        }
+    }
 
 }
