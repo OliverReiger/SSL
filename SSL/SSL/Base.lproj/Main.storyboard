@@ -71,95 +71,99 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="9QD-3D-07Q">
-                                <rect key="frame" x="0.0" y="49" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="49" width="375" height="116"/>
                                 <date key="date" timeIntervalSinceReferenceDate="483720095.98159999">
                                     <!--2016-04-30 14:41:35 +0000-->
                                 </date>
                             </datePicker>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Player Team 1" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="otL-4k-zhG">
-                                <rect key="frame" x="0.0" y="263" width="186" height="30"/>
+                                <rect key="frame" x="0.0" y="180" width="186" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Score Team 1" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xqF-SV-5M9">
-                                <rect key="frame" x="0.0" y="434" width="186" height="33"/>
+                                <rect key="frame" x="0.0" y="351" width="186" height="33"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Score Team 2" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="48F-Tp-X8h">
-                                <rect key="frame" x="189" y="434" width="186" height="33"/>
+                                <rect key="frame" x="189" y="351" width="186" height="33"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Player Team 2" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LBk-8C-GbE">
-                                <rect key="frame" x="184" y="263" width="191" height="33"/>
+                                <rect key="frame" x="184" y="180" width="191" height="33"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ddt-19-DxX">
-                                <rect key="frame" x="0.0" y="338" width="186" height="29"/>
+                                <rect key="frame" x="0.0" y="255" width="186" height="29"/>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P94-xJ-iHf">
-                                <rect key="frame" x="189" y="338" width="186" height="29"/>
+                                <rect key="frame" x="189" y="255" width="186" height="29"/>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n0K-iQ-AT2">
-                                <rect key="frame" x="0.0" y="368" width="186" height="29"/>
+                                <rect key="frame" x="0.0" y="285" width="186" height="29"/>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="me6-we-de2">
-                                <rect key="frame" x="0.0" y="397" width="186" height="29"/>
+                                <rect key="frame" x="0.0" y="314" width="186" height="29"/>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGZ-bk-brG">
-                                <rect key="frame" x="189" y="308" width="186" height="29"/>
+                                <rect key="frame" x="189" y="225" width="186" height="29"/>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vyt-rE-tQB">
-                                <rect key="frame" x="189" y="368" width="186" height="29"/>
+                                <rect key="frame" x="189" y="285" width="186" height="29"/>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EcH-Id-Rqe">
-                                <rect key="frame" x="189" y="397" width="186" height="29"/>
+                                <rect key="frame" x="189" y="314" width="186" height="29"/>
                             </pickerView>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" restorationIdentifier="Stepper2" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="SfE-LQ-4iB">
-                                <rect key="frame" x="235" y="551" width="94" height="29"/>
+                                <rect key="frame" x="235" y="468" width="94" height="29"/>
                                 <connections>
                                     <action selector="stepper2ValueChanged:" destination="3cq-pb-d5Y" eventType="valueChanged" id="txH-Wa-0Rt"/>
                                 </connections>
                             </stepper>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="ScoreTeam1" text="Team 1" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kyT-We-0Tw" userLabel="ValueLabel1">
-                                <rect key="frame" x="46" y="483" width="99" height="45"/>
+                                <rect key="frame" x="46" y="400" width="99" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="ScoreTeam2" text="Team 2" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fhi-AI-XIq" userLabel="ValueLabel2">
-                                <rect key="frame" x="235" y="483" width="99" height="45"/>
+                                <rect key="frame" x="235" y="400" width="99" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJ0-2f-3fA">
-                                <rect key="frame" x="0.0" y="308" width="186" height="29"/>
+                                <rect key="frame" x="0.0" y="225" width="186" height="29"/>
                             </pickerView>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" restorationIdentifier="Stepper1" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="uh7-EV-dIo">
-                                <rect key="frame" x="46" y="551" width="94" height="29"/>
+                                <rect key="frame" x="46" y="468" width="94" height="29"/>
                                 <connections>
                                     <action selector="stepper1ValueChanged:" destination="3cq-pb-d5Y" eventType="valueChanged" id="Q7P-Hg-Z78"/>
                                 </connections>
                             </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BD-Ed-KrB">
+                                <rect key="frame" x="255" y="549" width="59" height="30"/>
+                                <state key="normal" title="Abbruch"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dV-6v-QvT">
+                                <rect key="frame" x="60" y="549" width="70" height="30"/>
+                                <state key="normal" title="Speichern"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem systemItem="save" id="s5a-5l-e8M"/>
-                        <barButtonItem systemItem="cancel" id="U7E-z5-8vZ"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="stepper1" destination="uh7-EV-dIo" id="DQ7-Fr-kY6"/>
-                        <outlet property="stepper1ValueChanged" destination="uh7-EV-dIo" id="pTF-z9-PZC"/>
                         <outlet property="stepper2" destination="SfE-LQ-4iB" id="Ygp-0d-gWt"/>
                         <outlet property="valueLabel1" destination="kyT-We-0Tw" id="dfn-yU-v8i"/>
                         <outlet property="valueLabel2" destination="fhi-AI-XIq" id="oZn-Hn-6Cm"/>
@@ -168,6 +172,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D5u-9C-oee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117.5" y="430.5"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="tZt-Ts-UhV">
+            <objects>
+                <viewController id="OY6-VW-D5P" userLabel="Start View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MaX-fk-S1Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="OSn-NM-kUH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tG7-lf-Q10">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnG-Qf-n3Z">
+                                <rect key="frame" x="0.0" y="581" width="375" height="30"/>
+                                <state key="normal" title="Aktuelle Tabelle anzeigen"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJG-Nc-KXu">
+                                <rect key="frame" x="0.0" y="551" width="375" height="30"/>
+                                <state key="normal" title="Neue Ergebnisse eintragen"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqz-NN-CGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284.5" y="372.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l4J-c3-QEj">

@@ -32,12 +32,13 @@ class AddGameViewController: UIViewController {
     @IBOutlet weak var valueLabel1: UITextView!
     @IBOutlet weak var stepper1: UIStepper!
     @IBAction func stepper1ValueChanged(sender: AnyObject) {
-        valueLabel1.text = sender.value.description
+        let value = stepper1.value
+        valueLabel1.text = String(value)
     }
     @IBOutlet weak var valueLabel2: UITextView!
-
     @IBOutlet weak var stepper2: UIStepper!
     @IBAction func stepper2ValueChanged(sender: UIStepper) {
-        valueLabel2.text = sender.value.description
+        let value = stepper2.value
+        valueLabel2.text = String(value)
     }
 }
